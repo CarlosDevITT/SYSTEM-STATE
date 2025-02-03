@@ -1,4 +1,4 @@
-# AdminHub Dashboard
+# STATES SOFTWARE SERVICE Dashboard
 
 Welcome to the System State Dashboard repository!
 
