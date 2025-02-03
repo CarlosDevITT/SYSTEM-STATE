@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link defer rel="stylesheet" href="style.css">
+	<link defer rel="stylesheet" href="../src/bloco1/style.css">
+	<link defer rel="stylesheet" href="../src/bloco1/calculadora/style.css">
+	<link defer rel="stylesheet" href="Finance/styles.css">
+
+
+	<link  defer rel="stylesheet" href="./calc/style.1.css">
+
+
+	<title>FINANCEIRO</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script2.js" defer ></script>
+	<script src="script3.js" defer ></script>
+
+	<script src="../src/bloco1/script.js" defer ></script>
+
+
+
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+				<i class='bx bxs-devices'></i>
+			<span class="text">SYSTEM STATE</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="../index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Financeiro</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="../2Message/index.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="../3Team /index.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="../img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Financeiro</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Financerio</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="../index.html">Home</a>
+						</li>
+					</ul>
+
+				</div>
+				
+		<!--   JANELAS MODAL     -->		
+				<div  class="btn-download">
+						<i class='bx bxs-calculator'></i>
+					<span class="text" class="btnOpenModal" onclick="openModal()" >Calculadora</span>
+				</div>
+
+				<div class="modal-container">
+							<div class="modal">
+							  <h2>CALCULADORA</h2>
+							  <hr />
+							  <div class="calculator">
+								<div class="result">0</div>
+								<div class="buttons">
+								  <button class="bg-gray">C</button>
+								  <button class="bg-gray">±</button>
+								  <button class="bg-gray">%</button>
+								  <button class="bg-orange">÷</button>
+						  
+								  <button class="bg-light-gray">7</button>
+								  <button class="bg-light-gray">8</button>
+								  <button class="bg-light-gray">9</button>
+								  <button class="bg-orange">×</button>
+						  
+								  <button class="bg-light-gray">4</button>
+								  <button class="bg-light-gray">5</button>
+								  <button class="bg-light-gray">6</button>
+								  <button class="bg-orange">-</button>
+						  
+								  <button class="bg-light-gray">1</button>
+								  <button class="bg-light-gray">2</button>
+								  <button class="bg-light-gray">3</button>
+								  <button class="bg-orange">+</button>
+						  
+								  <button class="bg-light-gray button-zero">0</button>
+								  <button class="bg-light-gray">,</button>
+								  <button class="bg-orange">=</button>
+								</div>
+							  </div>
+							  <hr />
+							  <div class="btns">
+								<button class="btnOK" onclick="closeModal()">OK</button>
+								<button class="btnClose" onclick="closeModal()">Close</button>
+							  </div>
+							</div>							
+		   	    </div>
+             <!-- JANELA 2 -->
+				   <a href="#" class="btn-download">
+						<i class='bx bx-folder'></i>
+					<span class="text" >DRIVERS</span>
+					</a>
+			 <!-- JANELA 3 -->
+			 <a href="./ Cale/index.html" class="btn-download">
+				<i class='bx bxs-calendar'></i>
+			<span class="text" id="generate-pdf" >Calendario</span>
+			</a>
+
+             <!-- JANELA 1 -->
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+				<span class="text" id="generate-pdf" >Download PDF</span>
+				</a>
+				<!--   JANELAS MODAL     -->
+			</div>
+			<ul class="box-info">
+			 <div class="resume">
+					<li >
+							<i class='bx bxs-dollar-circle' ></i>
+								<span class="text">
+									<div>		Entradas: R$
+										<span class="incomes">0.00</span>
+									</div>
+								</span>
+							</li>
+			</div>
+
+			<div class="resume">					
+				<li>
+				<i class='bx bxs-wallet'></i>
+					<span class="text">
+							<div>
+									Total: R$
+									<span class="total">0.00</span>
+								</div>
+					</span>
+				</li>
+			</div>
+
+			<div class="resume">
+				<li >
+						<i class='bx bx-exit'></i>
+					<span class="text">
+							<div>
+									Saídas: R$
+									<span class="expenses">0.00</span>
+								</div>
+					</span>
+				</li>
+			</div>
+			</ul>
+			    <div class="newItem">
+							<div class="divDesc">
+							  <label for="desc">Descrição</label>
+							  <input type="text" id="desc" />
+							</div>
+							<div class="divAmount">
+							  <label for="amount">Valor</label>
+							  <input type="number" id="amount" />
+							</div>
+							<div class="divType">
+							  <label for="type">Tipo</label>
+							  <select id="type">
+								<option>Entrada</option>
+								<option>Saída</option>
+							  </select>
+							</div>
+							<button id="btnNew">Incluir</button>
+			      </div>
+		         <div class="divTable">
+	           		<table>
+							  <thead>
+								<tr>
+								  <th>Descrição</th>
+								  <th class="columnAmount">Valor</th>
+								  <th class="columnType">Tipo</th>
+								  <th class="columnAction"></th>
+								</tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+					</table>
+			
+		</main>
+		<!-- MAIN -->
+
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+	<script src="./teste/script.js"></script>
+</body>
+</html>
